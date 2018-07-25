@@ -8,7 +8,7 @@ organization       in ThisBuild := "com.lihaoyi"
 scalaVersion       in ThisBuild := "2.12.4"
 crossScalaVersions in ThisBuild := Seq("2.10.6", "2.11.12", "2.12.4", "2.13.0-M2")
 updateOptions      in ThisBuild := (updateOptions in ThisBuild).value.withCachedResolution(true)
-incOptions         in ThisBuild := (incOptions in ThisBuild).value.withNameHashing(true).withLogRecompileOnMacro(false)
+incOptions         in ThisBuild := (incOptions in ThisBuild).value.withLogRecompileOnMacro(false)
 //triggeredMessage   in ThisBuild := Watched.clearWhenTriggered
 
 lazy val utest = crossProject(JSPlatform, JVMPlatform, NativePlatform)
